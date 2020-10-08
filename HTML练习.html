@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        img {
+            width: 500px;
+            height: 300px;
+        }
+        form div{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>王浩霖练习</h1>
+    <p>这是p标签</p>
+    <p>标签可以嵌套，<strong>此处加粗字体</strong></p>
+    <p>HTML里不显示大小于号，所以a&lt;b中小于号用实体字符代替</p>
+    <h2>块级元素练习</h2>
+    <div>div是典型块级元素</div>
+    <div>div是典型块级元素</div>
+    <div>块级元素，不可以与其他块级元素同行，但是可以嵌套。</div>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>标题不可以嵌套</h4>
+    <p>p标签是段落也不可以嵌套</p>
+    <div>div标签是区块的意思可以嵌套</div>
+    <p>ul是列表 也是块级元素 里面只可以加li 只有一列</p>
+    <ul>
+        <li>1列表</li>
+        <li>2列表</li>
+        <li>3列表</li>
+    </ul>
+    <p>table是表格 也是块级元素 里面需要加tr 每个tr里要写td 代表一行 要写几行就要写多少tr</p>
+    <table>
+        <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>102</td>
+            <td>103</td>
+        </tr>
+        <tr>
+            <td>011</td>
+            <td>012</td>
+            <td>013</td>
+        </tr>
+    </table>
+    <div style="width: 100px;height: 150px;background:blue;">小鸟伏特加
+        <div>整这么高</div>
+    </div>
+    <div style="width: 100px;height: 150px;background: red;">
+        无情哈拉少
+        <div>八一和列</div>
+    </div>
+
+    <h2>行级元素练习</h2>
+    <span>span是典型行级元素</span>
+    <span>span是典型行级元素</span>
+    <span>行级元素，可以与其他行级元素同行,不能设置宽高。因为设置了也没用，嘻嘻。</span>
+    <p>a 标签是链接</p>
+    <a href="https://www.baidu.com/">百度</a>
+    <p>input是输入框</p>
+    <input type="text">
+    <p>img 是插入图片 可以被控制大小</p>
+    <img src="瑞克和莫蒂.jpg" alt="加载不出来你气不气?">
+    <b>b 标签是实体标签 设置字符为粗体 通知浏览器该如何显示</b>
+    <strong>strong 标签是逻辑标签 加强字符语气 通知浏览器标签内文字的重要性</strong>
+    <i>i 标签是实体标签 设置字符倾斜 通知浏览器该如何显示</i>
+    <em>em 标签是逻辑标签 加强语气 表示强调 严谨来说strong比em的强调更强一点</em>
+    <h2>表单元素练习</h2>
+    <p>form 是表单控件 按钮 表示将表单内容提交给服务器</p>
+    <form action="">
+        <div>
+            <label for="name">姓名：</label>
+            <input id="name" type="text" name="name">
+        </div>
+        <div> <label for="dizhi">地址：</label>
+            <input id="dizhi" type="text">
+        </div>
+
+        <div>
+            <label for="sex">性别：</label>
+            男<input id="sex" type="radio" name="sex" value="nale">
+            女<input id="sex" type="radio" name="sex" value="female">
+        </div>
+
+        <div>
+            <label for="hobby">爱好:</label>
+            吃肉<input type="checkbox" name="hobby" value="吃肉" id="hobby">
+            喝酒<input type="checkbox" name="hobby" value="喝酒" id="hobby">
+            睡觉<input type="checkbox" name="hobby" value="睡觉" id="hobby">
+        </div>
+
+        <div>
+            <label for="pwd">密码:</label>
+            <input type="password" name="pwd" id="pwd">
+        </div>
+
+        <div>
+            <input type="file" name="" id="">
+
+        </div>
+
+        <div>
+            <input type="submit" value="提交">
+        </div>
+
+        <div>
+            <label for="age">年龄</label>
+            <select name="" id="">
+                <option value="10-20">10-20</option>
+                <option value="21-30">21-30</option>
+                <option value="31-40">31-40
+                </option>
+            </select>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
