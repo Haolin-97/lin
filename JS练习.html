@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS练习</title>
+</head>
+
+<body>
+    <!-- 内部引用 -->
+    <script type="text/javascript">
+        document.write("<h2>Hello,JavaScriptWorld!</h2>");
+    </script>
+    <!--外部引用-->
+    <script src="./JS练习.js">
+
+    </script>
+    <!--内联-->
+    <button onclick="alert('点了也没用！')">点我呀点我呀</button>
+    <!--常用调试代码方式-->
+    <script>
+        console.log('我在这里')
+    </script>
+    <p> // 行注释 ctrl+?</p>
+    <h3>变量练习</h3>
+    <p>黑色字是字符串 蓝色字是数值</p>
+    <script>
+        //JS五种基本数据类型
+
+        // 字符型 String
+        var str = '字符串';
+        // 数值型 number
+        var num = 1;
+        console.log(str);
+        console.log(num);
+        // 布尔型 Boolen
+        var b = true;
+        var b1 = false;
+        console.log(b);
+        // undefind：定义了一个变量 但是没给它赋值
+        // var aa;
+        // console.log(aa);
+        var ud = undefined;
+        console.log(ud);
+        // console.log(qq);
+        // 报错： qq is not defined
+        var nu = null;//对空对象的引用 定义一个变量 变量的值是不存在 null是一个不存在的对象的占位符
+        console.log(nu)
+
+        //两种引用数据类型
+
+        var arr = [1, 2, 3]
+        console.log(arr);
+        var obj = {
+            name: '小马',
+            age: '23',
+            sex: '女'
+        }
+        console.log(obj);
+        //变量的数据类型可以随意切换
+        str = 999;
+        console.log(str);
+        //变量可以省略定义直接赋值 用var声明时 不可以在window里删除 不用反之
+        str1 = "略略略";
+        console.log(str1);
+        /*  变量命名规则
+           1.必须由字母 数字 下划线 $组成
+           2.不能以数字开头
+           3.严格区分大小写
+         */
+        var testone = 'world'
+        var test_one = 'world'//连接符式命名
+        var TestOne = 'world'//驼峰式命名
+        //var test one =  'word'//不允许使用空格命名变量 会报错
+        //命名时尽量要把变量的意义用英文翻译过来再去命名 避免产生异议
+    </script>
+</body>
+
+</html>
