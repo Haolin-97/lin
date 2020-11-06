@@ -25,6 +25,7 @@
     <p> // 行注释 ctrl+?</p>
     <h3>变量练习</h3>
     <p>黑色字是字符串 蓝色字是数值</p>
+    <p>在给变量命名的时候 关键字与保留字不可以作为变量的名字来运用</p>
     <script>
         //JS五种基本数据类型
 
@@ -52,13 +53,16 @@
 
         var arr = [1, 2, 3]
         console.log(arr);
+
         var obj = {
             name: '小马',
             age: '23',
             sex: '女'
         }
         console.log(obj);
+
         //变量的数据类型可以随意切换
+        
         str = 999;
         console.log(str);
         //变量可以省略定义直接赋值 用var声明时 不可以在window里删除 不用反之
@@ -73,8 +77,9 @@
         var test_one = 'world'//连接符式命名
         var TestOne = 'world'//驼峰式命名
         //var test one =  'word'//不允许使用空格命名变量 会报错
-        //命名时尽量要把变量的意义用英文翻译过来再去命名 避免产生异议
-    </script>
+        //命名时尽量要把变量的意义用英文翻译过来再去命名 避免产生异议 
+        </script>
+
 </body>
 
 </html>

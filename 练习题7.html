@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>练习题</title>
+</head>
+
+<body>
+    <p>7. 有一个三位数x，被4除余2，被7除余3，被9除余5，请求出这个数。</p>
+    <!--  <script>
+        for (var i = 100; i < 1000; i++) {
+            if (i % 4 == 2 && i % 7 == 3 && i % 9 == 5) {
+                document.write(i)
+                document.write('<br>')
+            }
+        }
+    </script> -->
+    <p>8. 求所有满足条件的四位数ABCD，它是13的倍数，且第3位数加上第2位数等于第4位数（即：A=B+C）。
+        （提示：对于四位数的整数x，通过Math.floor(x/1000)可求出第4位的数字，其他位数的提取也类似） </p>
+    <!-- <script>
+        for (var i = 1000; i < 10000; i++) {
+            var A = Math.floor(i / 1000);
+            var B = Math.floor(i / 100) % 10;
+            var C = Math.floor(i / 10) % 10;
+            if (i % 13 == 0 && A == (B + C)) {
+                document.write(i);
+                document.write('<br>');
+            }
+        }
+
+    </script> -->
+    <p>1. 编写一个函数 f(x) = 4x2+3x+2，使用户通过提示对话框输入x的值，能得到相应的计算结果。</p>
+    <!-- <script>
+        var x = prompt('请输入数字');
+        function f(x) {
+           return 4 * x * x + 3 * x + 2
+        }
+        console.log(f(x));
+    </script> -->
+    <p>2. 编写一个函数Min(x,y)求出x,y这两个数中的最小值，要求x,y的值由用户通过提示对话框输入。</p>
+    <!-- <script>
+        var x = prompt('x=');
+        var y = prompt('y=');
+        alert(x > y ? y : x);
+    </script> -->
+    <p>3. 编写一个判断某个非负整数是否能够同时被3,5,7整除的函数，
+        然后在页面上输出1~1000之间所有能同时被3,5,7整除的整数，并要求每行显示6个这样的数。</p>
+    <!--   <script>
+        var count = 0;
+        for (var i = 1; i < 1000; i++) {
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+                document.write(i + ', ');
+                count++; 
+                if (count % 6 == 0) document.write('<br>')
+            }
+           
+        }
+    </script> -->
+    <p>4. 在页面上编程输出100~1000之间的所有素数，并要求每行显示6个素数。</p>
+    <!--   <script>
+        function isPrime(n) {
+            for (var i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            } 
+            return true;
+        }
+        var count = 0;
+        for (i = 100; i <= 1000; i++) {
+            if (isPrime(i)) {
+                document.write(i + ' ');
+                count++;
+                if (count % 6 == 0) {
+                    document.write('<br>')
+                }
+            }
+        }
+    </script> -->
+    <p>5. 编写一个非递归函数factorial(n)，计算12!-10!的结果。</p>
+  <!--   <script>
+        function factorial(n) {
+            var fac = 1;
+            for (var i = 2; i <= n; i++) {
+                fac *= i
+            }
+            return fac;
+        } //此函数求出任意数 n 的阶乘 然后下面log 打印 把数字带入 n 中 即可得出答案。
+        console.log(factorial(12) - factorial(10));
+    </script> -->
+</body>
+
+</html>
